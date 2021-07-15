@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="icon" href="./calculator-solid.svg"/>
+  <link href="./styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <section>
+    <div>
+      <form onsubmit="calcularIMC(event)">
+        <p><strong>BMI Calculator</strong> </p>
+
+        <label for="nome">Name</label>
+        <input id="nome" type="text" placeholder="Inform your name" />
+
+        <label for="peso">Weight</label>
+        <input id="peso" type="number" placeholder="Inform your weight" />
+
+        <label for="altura">Height</label>
+        <input id="altura" type="number" step="0.01" placeholder="Inform your height" />
+
+        <label>Gender</label>
+
+        <br>
+        <label for="gender">
+          <input type="radio" name="gender" checked="true" value="man" /> Man   &nbsp; &nbsp;
+
+
+    
+          <input type="radio" name="gender" value="woman" /> Woman
+        </label>
+
+        <p id="resposta"></p>
+        <button type="submit">Calculate</button>
+
+
+      </form>
+
+    </div>
+
+    <div>
+      <p>BMI Registers</p>
+      <ul id="lista"></ul>
+    </div>
+
+
+  </section>
+
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
